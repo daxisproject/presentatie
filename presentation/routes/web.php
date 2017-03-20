@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function () {
+    $name = 'Test page';
+
+    return view('test', compact('name'));
+});
